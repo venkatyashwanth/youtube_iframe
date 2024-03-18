@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoSlider</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favIcons/favicon.png">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./assets/css/core/swiper-bundle.min.css">
+    <!-- External -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- <div class="video-wrapper"> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="close-modal btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-wrapper">
+                            <div class="video-frame">
+                                <iframe id="video" width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/nfgz7IXxE1M?&showinfo=0&mute=1"
+                                    title="YouTube video player" frameborder="0" allowfullscreen
+                                    poster="https://i.ytimg.com/vi/nfgz7IXxE1M/hqdefault.jpg">
+                                </iframe>
+                            </div>
+                            <div id="overlay" class="overlay">
+                                <img src="https://i.ytimg.com/vi/nfgz7IXxE1M/hqdefault.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close-modal btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!-- Bootstrap -->
+    <script src="./assets/js/core/bootstrap-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="./assets/js/core/swiper-bundle.min.js"></script>
+    <!-- Jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/core/jquery.js"></script>
+    <!-- External -->
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#overlay').on('click', function (ev) {
+
+                $("#video")[0].src += "&autoplay=1";
+
+                $('#video')[0].addEventListener("load", () => {
+                    jQuery(this).hide();
+
+                })
+
+
+
+                ev.preventDefault();
+
+            });
+
+
+            $('.close-modal').click(function () {
+                console.log("closed button")
+                $('iframe').attr('src', $('iframe').attr('src'));
+            });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

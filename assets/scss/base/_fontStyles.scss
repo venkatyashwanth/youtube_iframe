@@ -1,0 +1,40 @@
+/* Roboto Mono */
+@font-face {
+    font-family: 'RobotoMono__Bold--700';
+    src: url('../fonts/RobotoMono/Bold/RobotoMono-Bold.eot');
+    src: url('../fonts/RobotoMono/Bold/RobotoMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoMono/Bold/RobotoMono-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoMono/Bold/RobotoMono-Bold.woff') format('woff'),
+        url('../fonts/RobotoMono/Bold/RobotoMono-Bold.ttf') format('truetype'),
+        url('../fonts/RobotoMono/Bold/RobotoMono-Bold.svg#RobotoMono-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoMono__Thin--100';
+    src: url('../fonts/RobotoMono/Thin/RobotoMono-Thin.eot');
+    src: url('../fonts/RobotoMono/Thin/RobotoMono-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoMono/Thin/RobotoMono-Thin.woff2') format('woff2'),
+        url('../fonts/RobotoMono/Thin/RobotoMono-Thin.woff') format('woff'),
+        url('../fonts/RobotoMono/Thin/RobotoMono-Thin.ttf') format('truetype'),
+        url('../fonts/RobotoMono/Thin/RobotoMono-Thin.svg#RobotoMono-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Open-Sans */
+@font-face {
+    font-family: 'OpenSans__ExtraBold--800';
+    src: url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.eot');
+    src: url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.woff') format('woff'),
+        url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Open_Sans/ExtraBold/OpenSans-ExtraBold.svg#OpenSans-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
